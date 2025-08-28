@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-copyright">
             <p>
-              © {currentYear} Basant Abdalla. Made with <FaHeart className="heart-icon" /> using the Dreamy Princess palette
+              © {currentYear} Basant Abdalla.
             </p>
           </div>
         </div>

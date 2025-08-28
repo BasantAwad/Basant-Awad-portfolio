@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import analyticsService from './services/analytics';
+
+// Import design system styles
+import './styles/globals.css';
+import './styles/loading.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
@@ -16,6 +21,18 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 
+
+// Component to track page views
+function PageTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Track page view
+    analyticsService.trackPageView(location.pathname);
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +61,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
+        <PageTracker />
         <div className="App">
           <Navbar />
           <main>

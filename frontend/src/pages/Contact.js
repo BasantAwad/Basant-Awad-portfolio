@@ -9,6 +9,7 @@ import {
   FaGraduationCap
 } from 'react-icons/fa';
 import { secureFormSubmission, logSecurityEvent } from '../utils/security';
+import analyticsService from '../services/analytics';
 import './Contact.css';
 
 const Contact = () => {
@@ -52,6 +53,14 @@ const Contact = () => {
       
       // Log successful form submission
       logSecurityEvent('contact_form_submitted', { 
+        hasName: !!validation.sanitizedData.name,
+        hasEmail: !!validation.sanitizedData.email,
+        hasSubject: !!validation.sanitizedData.subject,
+        hasMessage: !!validation.sanitizedData.message
+      });
+      
+      // Track analytics event
+      analyticsService.trackEvent('contact_form_submitted', {
         hasName: !!validation.sanitizedData.name,
         hasEmail: !!validation.sanitizedData.email,
         hasSubject: !!validation.sanitizedData.subject,

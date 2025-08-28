@@ -1,0 +1,36 @@
+{
+  "name": "basant-portfolio-styles",
+  "version": "1.0.0",
+  "description": "Global styling and design system for Basant Abdalla Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "lint": "stylelint '**/*.css'",
+    "format": "prettier --write '**/*.css'",
+    "validate": "npm run lint && npm run format"
+  },
+  "dependencies": {
+    "postcss": "^8.4.27",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1"
+  },
+  "devDependencies": {
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "prettier": "^3.0.2",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-custom-properties": "^13.0.0",
+    "postcss-custom-media": "^9.0.0"
+  },
+  "keywords": [
+    "css",
+    "design-system",
+    "portfolio",
+    "styling"
+  ],
+  "author": "Basant Abdalla",
+  "license": "MIT"
+}

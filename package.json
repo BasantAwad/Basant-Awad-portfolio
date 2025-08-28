@@ -13,6 +13,7 @@
     "dev:frontend": "cd frontend && npm start",
     "dev:styles": "cd styles && npm run watch",
     "build": "npm run build:styles && npm run build:frontend",
+    "vercel-build": "cd frontend && npm install && npm run build",
     "build:frontend": "cd frontend && npm run build",
     "build:styles": "cd styles && npm run build",
     "install:all": "npm install && npm run install:frontend && npm run install:styles",

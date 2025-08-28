@@ -15,9 +15,7 @@ import {
   FaShieldAlt,
   FaRobot,
   FaMicrochip,
-  FaGithub,
-  FaProjectDiagram,
-  FaCogs
+  FaGithub
 } from 'react-icons/fa';
 import './Resume.css';
 
@@ -42,39 +40,18 @@ const Resume = () => {
 
   const skills = {
     programming: [
-      { name: 'Java', icon: <FaCode /> },
-      { name: 'Python', icon: <FaCode /> },
-      { name: 'JavaScript', icon: <FaCode /> },
-      { name: 'HTML/CSS', icon: <FaCode /> },
-      { name: 'SQL', icon: <FaDatabase /> }
+      { name: 'Java', level: 85, icon: <FaCode /> },
+      { name: 'Python', level: 80, icon: <FaCode /> },
+      { name: 'JavaScript', level: 75, icon: <FaCode /> },
+      { name: 'HTML/CSS', level: 85, icon: <FaCode /> },
+      { name: 'SQL', level: 80, icon: <FaDatabase /> }
     ],
     technologies: [
-      { name: 'Web Development', icon: <FaLaptopCode /> },
-      { name: 'Database Design', icon: <FaDatabase /> },
-      { name: 'Git & GitHub', icon: <FaGithub /> },
-      { name: 'Data Management', icon: <FaDatabase /> },
-      { name: 'Computer Science', icon: <FaGraduationCap /> }
-    ],
-    frameworks: [
-      { name: 'React', icon: <FaLaptopCode /> },
-      { name: 'Node.js', icon: <FaLaptopCode /> },
-      { name: 'Express.js', icon: <FaLaptopCode /> },
-      { name: 'Spring Boot', icon: <FaLaptopCode /> }
-    ],
-  
-    tools: [
-      { name: 'Git & GitHub', icon: <FaGithub /> },
-      { name: 'VS Code / IntelliJ', icon: <FaTools /> },
-      { name: 'Postman', icon: <FaTools /> },
-      { name: 'Docker (basics)', icon: <FaCogs /> }
-    ],
-  
-    domains: [
-      { name: 'Web Development', icon: <FaLaptopCode /> },
-      { name: 'Database Design', icon: <FaDatabase /> },
-      { name: 'Data Management', icon: <FaDatabase /> },
-      { name: 'Computer Science Fundamentals', icon: <FaGraduationCap /> },
-      { name: 'Software Engineering Concepts', icon: <FaProjectDiagram /> }
+      { name: 'Web Development', level: 80, icon: <FaLaptopCode /> },
+      { name: 'Database Design', level: 85, icon: <FaDatabase /> },
+      { name: 'Git & GitHub', level: 90, icon: <FaGithub /> },
+      { name: 'Data Management', level: 75, icon: <FaDatabase /> },
+      { name: 'Computer Science', level: 80, icon: <FaGraduationCap /> }
     ]
   };
 
@@ -110,106 +87,40 @@ const Resume = () => {
 
   const projects = [
     {
-      id: 1,
       title: 'Car Rental App',
-      category: 'web',
-      image: '/project-images/car-rental.jpg',
-      description: 'A JavaScript-based car rental application with modern UI/UX design. Features include vehicle browsing, booking management, and user authentication.',
-      tech: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-      features: ['Vehicle Catalog', 'Booking System', 'User Authentication', 'Responsive Design', 'Modern UI/UX'],
-      github: 'https://github.com/BasantAwad/car-rental-app',
-      live: null,
-      status: 'Completed',
-      year: '2025'
+      description: 'JavaScript-based car rental application with modern UI/UX design',
+      technologies: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+      link: 'https://github.com/BasantAwad/car-rental-app'
     },
     {
-      id: 2,
       title: 'Advanced Database Project',
-      category: 'database',
-      image: '/project-images/database-project.jpg',
-      description: 'A comprehensive Java-based database management system demonstrating advanced database concepts and SQL operations.',
-      tech: ['Java', 'SQL', 'Database Design'],
-      features: ['Database Management', 'SQL Operations', 'Data Modeling', 'CRUD Operations'],
-      github: 'https://github.com/BasantAwad/Advanced-Database-Project',
-      live: null,
-      status: 'Completed',
-      year: '2025'
+      description: 'Java-based database management system demonstrating advanced database concepts',
+      technologies: ['Java', 'SQL', 'Database Design'],
+      link: 'https://github.com/BasantAwad/Advanced-Database-Project'
     },
     {
-      id: 3,
       title: 'Publication Log',
-      category: 'data',
-      image: '/project-images/publication-log.jpg',
-      description: 'A Python application for managing and tracking publications, research papers, and academic documents.',
-      tech: ['Python', 'Data Management'],
-      features: ['Publication Tracking', 'Document Management', 'Search Functionality', 'Data Organization'],
-      github: 'https://github.com/BasantAwad/Publication_Log',
-      live: null,
-      status: 'Active',
-      year: '2025'
+      description: 'Python application for managing and tracking publications and academic documents',
+      technologies: ['Python', 'Data Management'],
+      link: 'https://github.com/BasantAwad/Publication_Log'
     },
     {
-      id: 4,
       title: 'Theory of Computation (TOC)',
-      category: 'academic',
-      image: '/project-images/toc-project.jpg',
-      description: 'Java implementation of Theory of Computation concepts including automata, formal languages, and computational complexity.',
-      tech: ['Java', 'Algorithms', 'Computer Science'],
-      features: ['Automata Implementation', 'Language Processing', 'Algorithm Analysis', 'Educational Tools'],
-      github: 'https://github.com/BasantAwad/TOC',
-      live: null,
-      status: 'Completed',
-      year: '2025'
-    },
-    {
-      id: 5,
-      title: 'Sustainable Development Goals (SDGs)',
-      category: 'web',
-      image: '/project-images/sdgs-project.jpg',
-      description: 'An HTML-based project showcasing the United Nations Sustainable Development Goals with interactive elements and educational content.',
-      technologies: ['HTML', 'CSS', 'Web Design'],
-      features: ['Interactive Content', 'Educational Resources', 'Responsive Design', 'Goal Tracking'],
-      github: 'https://github.com/BasantAwad/SDGs',
-      live: null,
-      status: 'Completed',
-      year: '2025'
-    },
-    {
-      id: 6,
-      title: 'ZelleXY',
-      category: 'web',
-      image: '/project-images/zellexy.jpg',
-      description: 'A web-based project with HTML implementation, showcasing modern web development practices and design principles.',
-      tech: ['HTML', 'CSS', 'Web Development'],
-      features: ['Modern Design', 'Responsive Layout', 'Interactive Elements', 'Cross-browser Compatibility'],
-      github: 'https://github.com/BasantAwad/ZelleXY',
-      live: null,
-      status: 'Completed',
-      year: '2025'
-    },
-    {
-      id: 7,
-      title: 'Portfolio Website',
-      category: 'web',
-      image: '/project-images/portfolio.jpg',
-      description: 'Personal portfolio website built with React and styled using the Dreamy Princess color palette. Features dark/light mode, responsive design, and smooth animations.',
-      tech: ['React', 'CSS3', 'Framer Motion', 'React Router', 'Responsive Design'],
-      features: ['Responsive Design', 'Dark/Light Mode', 'Smooth Animations', 'Multiple Pages', 'Interactive Elements', 'Modern UI/UX'],
-      github: 'https://github.com/BasantAwad/portfolio',
-      live: 'https://basant.dev',
-      status: 'Completed',
-      year: '2024'
+      description: 'Java implementation of Theory of Computation concepts including automata and formal languages',
+      technologies: ['Java', 'Algorithms', 'Computer Science'],
+      link: 'https://github.com/BasantAwad/TOC'
     }
   ];
-  
 
   const renderSkillBar = (skill) => (
     <div key={skill.name} className="skill-item">
       <div className="skill-header">
         <span className="skill-icon">{skill.icon}</span>
         <span className="skill-name">{skill.name}</span>
+        <span className="skill-level">{skill.level}%</span>
       </div>
       <div className="skill-bar">
+        <div className="skill-progress" style={{ width: `${skill.level}%` }}></div>
       </div>
     </div>
   );

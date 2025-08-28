@@ -114,7 +114,6 @@ const Projects = () => {
       year: '2024'
     }
   ];
-  
 
   const filters = [
     { key: 'all', label: 'All Projects', icon: <FaCode />, count: projects.length },

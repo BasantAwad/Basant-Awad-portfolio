@@ -2,35 +2,118 @@
   padding-top: 80px;
 }
 
+/* Hero Section */
 .resume-hero {
   background: linear-gradient(135deg, var(--soft-pink-light), var(--light-lilac-light));
   padding: var(--spacing-3xl) 0;
   text-align: center;
 }
 
-body.dark-mode .resume-hero {
-  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+body.dark-mode .resume-hero { background: linear-gradient(135deg, #2d2d2d, #1a1a1a); }
+
+.resume-content { text-align: center; padding: var(--spacing-3xl) 0; background: white; } body.dark-mode .resume-content { background: #1a1a1a; }
+/* === Resume Tabs Navigation === */
+.resume-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* space between tabs */
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-.resume-content {
-  text-align: center;
-  padding: var(--spacing-3xl) 0;
-  background: white;
+.resume-tabs button {
+  background: var(--soft-pink-light);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-body.dark-mode .resume-content {
-  background: #1a1a1a;
+.resume-tabs button:hover {
+  background: var(--light-lilac-light);
+  transform: translateY(-2px);
 }
 
-.resume-content p {
-  font-size: 1.125rem;
-  color: var(--accent-black);
-  opacity: 0.8;
-  max-width: 600px;
-  margin: 0 auto;
+.resume-tabs button.active {
+  background: var(--accent-black);
+  color: white;
 }
 
-body.dark-mode .resume-content p {
-  color: #ffffff;
-  opacity: 0.7;
+body.dark-mode .resume-tabs button {
+  background: #2d2d2d;
+  color: #ddd;
 }
+
+body.dark-mode .resume-tabs button.active {
+  background: #ffffff;
+  color: #111;
+}
+
+/* === Tab Content Sections (Cards Style) === */
+.education-section,
+.skills-section,
+.experience-section,
+.projects-section {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* === Shared Card Style === */
+.education-item,
+.skills-category,
+.experience-item,
+.project-card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover,
+.skills-category:hover,
+.experience-item:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+body.dark-mode .education-item,
+body.dark-mode .skills-category,
+body.dark-mode .experience-item,
+body.dark-mode .project-card {
+  background: #2a2a2a;
+  color: #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* === Project Grid Layout === */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.project-tech span {
+  background: var(--light-lilac-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+body.dark-mode .project-tech span {
+  background: #444;
+}
+
+.resume-content p { font-size: 1.125rem; color: var(--accent-black); opacity: 0.8; max-width: 600px; margin: 0 auto; } body.dark-mode .resume-content p { color: #ffffff; opacity: 0.7; }

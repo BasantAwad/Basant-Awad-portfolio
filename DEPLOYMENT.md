@@ -8,7 +8,8 @@ This guide will help you deploy your portfolio website to GitHub Pages and Verce
 
 #### Prerequisites:
 - GitHub account
-- Repository named `portfolio` under your GitHub username
+- Repository named `Basant-Awad` under your GitHub username
+- Custom domain: `basant-awad.com`
 
 #### Steps:
 
@@ -28,7 +29,8 @@ This guide will help you deploy your portfolio website to GitHub Pages and Verce
 
 3. **Your site will be available at:**
    ```
-   https://basantawad.github.io/portfolio
+   https://basant-awad.com
+   https://www.basant-awad.com
    ```
 
 #### Manual Deployment (if needed):
@@ -111,16 +113,26 @@ All platforms support automatic deployments:
 
 ### GitHub Pages:
 1. Go to repository Settings → Pages
-2. Add custom domain in "Custom domain" field
-3. Add CNAME record in your DNS:
+2. Add custom domain: `basant-awad.com`
+3. Enable HTTPS
+4. Add DNS records:
    ```
-   CNAME: yourdomain.com → basantawad.github.io
+   CNAME: www → basantawad.github.io
+   A: @ → 185.199.108.153
+   A: @ → 185.199.109.153
+   A: @ → 185.199.110.153
+   A: @ → 185.199.111.153
    ```
 
 ### Vercel:
 1. Go to Project Settings → Domains
-2. Add your custom domain
-3. Follow DNS instructions provided by Vercel
+2. Add custom domain: `basant-awad.com`
+3. Add DNS records:
+   ```
+   CNAME: www → cname.vercel-dns.com
+   A: @ → 76.76.19.19
+   ```
+4. Enable automatic HTTPS
 
 ## 🚨 Troubleshooting
 

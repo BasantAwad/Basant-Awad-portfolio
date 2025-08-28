@@ -137,15 +137,15 @@ export const isSessionValid = (session) => {
   return new Date() < new Date(session.expiresAt);
 };
 
-// API Security
-export const createAPIKey = () => {
-  return 'api_' + Math.random().toString(36).substring(2, 15) + 
+// Frontend-only security utilities
+export const generateSecureId = () => {
+  return 'id_' + Math.random().toString(36).substring(2, 15) + 
          Math.random().toString(36).substring(2, 15);
 };
 
-export const validateAPIKey = (apiKey) => {
-  const apiKeyRegex = /^api_[a-z0-9]{26}$/;
-  return apiKeyRegex.test(apiKey);
+export const validateSecureId = (id) => {
+  const idRegex = /^id_[a-z0-9]{26}$/;
+  return idRegex.test(id);
 };
 
 // Logging and monitoring
@@ -239,7 +239,7 @@ export const secureFormSubmission = (formData, validationRules) => {
 };
 
 // Export default security configuration
-export default {
+const securityConfig = {
   CSP_HEADERS,
   RATE_LIMIT_CONFIG,
   sanitizeInput,
@@ -253,10 +253,12 @@ export default {
   validateFileUpload,
   createSecureSession,
   isSessionValid,
-  createAPIKey,
-  validateAPIKey,
+  generateSecureId,
+  validateSecureId,
   logSecurityEvent,
   isProduction,
   getSecurityHeaders,
   secureFormSubmission
 };
+
+export default securityConfig;

@@ -125,7 +125,7 @@ const FAQ = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
+    // Form data processed successfully
     console.log('Form submitted:', formData);
     alert('Thank you for your message! I will get back to you soon.');
     setFormData({ name: '', email: '', subject: '', message: '' });

@@ -15,8 +15,7 @@ import Achievements from './pages/Achievements';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
-import './styles/globals.css';
-import './styles/loading.css';
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

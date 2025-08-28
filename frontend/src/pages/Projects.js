@@ -12,7 +12,8 @@ import {
   FaDatabase,
   FaCloud,
   FaMobile,
-  FaPalette
+  FaPalette,
+  FaGraduationCap
 } from 'react-icons/fa';
 import './Projects.css';
 

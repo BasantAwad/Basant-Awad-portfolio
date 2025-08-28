@@ -5,11 +5,10 @@ import {
   FaLinkedin, 
   FaEnvelope, 
   FaMapMarkerAlt, 
-  FaPhone,
   FaPaperPlane,
   FaGraduationCap
 } from 'react-icons/fa';
-import { secureFormSubmission, validateEmail, validateName, validateMessage, logSecurityEvent } from '../utils/security';
+import { secureFormSubmission, logSecurityEvent } from '../utils/security';
 import './Contact.css';
 
 const Contact = () => {
@@ -59,10 +58,10 @@ const Contact = () => {
         hasMessage: !!validation.sanitizedData.message
       });
       
-      // Here you would typically send the sanitized data to your backend
+      // Form data processed successfully
       console.log('Form submitted:', validation.sanitizedData);
       
-      // Simulate API call
+      // Simulate form processing
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       alert('Thank you for your message! I will get back to you soon.');

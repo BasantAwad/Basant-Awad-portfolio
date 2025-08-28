@@ -1,0 +1,265 @@
+{
+  "personal": {
+    "name": "Basant Abdalla",
+    "title": "Undergraduate Software Engineer",
+    "email": "basant.abdalla@example.com",
+    "location": "Egypt",
+    "github": "https://github.com/BasantAwad",
+    "linkedin": "https://www.linkedin.com/in/basantabdalla/",
+    "summary": "Passionate software engineering student with expertise in full-stack development, AI, and cybersecurity. Currently pursuing my degree while actively contributing to open-source projects and participating in hackathons."
+  },
+  "projects": [
+    {
+      "id": 1043927599,
+      "title": "Basant Awad",
+      "category": "other",
+      "description": "A software project",
+      "technologies": [],
+      "github": "https://github.com/BasantAwad/Basant-Awad",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "updated": "2025-08-24T23:01:25Z",
+      "topics": []
+    },
+    {
+      "id": 1032209651,
+      "title": "Publication Log",
+      "category": "other",
+      "description": "A Python project",
+      "technologies": [
+        "Python"
+      ],
+      "github": "https://github.com/BasantAwad/Publication_Log",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "updated": "2025-08-23T17:32:25Z",
+      "topics": []
+    },
+    {
+      "id": 989611075,
+      "title": "TOC",
+      "category": "other",
+      "description": "A Java project",
+      "technologies": [
+        "Java"
+      ],
+      "github": "https://github.com/BasantAwad/TOC",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "updated": "2025-05-29T14:43:34Z",
+      "topics": []
+    },
+    {
+      "id": 980010138,
+      "title": "SDGs",
+      "category": "other",
+      "description": "A HTML project",
+      "technologies": [
+        "HTML"
+      ],
+      "github": "https://github.com/BasantAwad/SDGs",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "updated": "2025-05-29T14:42:46Z",
+      "topics": []
+    },
+    {
+      "id": 989599231,
+      "title": "Advanced Database Project",
+      "category": "other",
+      "description": "A Java project",
+      "technologies": [
+        "Java"
+      ],
+      "github": "https://github.com/BasantAwad/Advanced-Database-Project",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "updated": "2025-05-25T09:37:24Z",
+      "topics": []
+    },
+    {
+      "id": 982376453,
+      "title": "Car Rental App",
+      "category": "web",
+      "description": "A JavaScript project",
+      "technologies": [
+        "JavaScript"
+      ],
+      "github": "https://github.com/BasantAwad/car-rental-app",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "updated": "2025-05-20T19:25:03Z",
+      "topics": []
+    },
+    {
+      "id": 979971956,
+      "title": "ZelleXY",
+      "category": "other",
+      "description": "A HTML project",
+      "technologies": [
+        "HTML"
+      ],
+      "github": "https://github.com/BasantAwad/ZelleXY",
+      "live": null,
+      "status": "Active",
+      "year": 2025,
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "updated": "2025-05-14T21:31:06Z",
+      "topics": []
+    }
+  ],
+  "linkedin": {
+    "profile": {
+      "name": "Basant Abdalla",
+      "headline": "Undergraduate Software Engineer",
+      "location": "Egypt",
+      "summary": "Passionate software engineering student with expertise in full-stack development, AI, and cybersecurity.",
+      "url": "https://www.linkedin.com/in/basantabdalla/"
+    },
+    "experience": [
+      {
+        "title": "Software Engineering Student",
+        "company": "University of Technology",
+        "duration": "2021 - Present",
+        "description": "Pursuing degree in Software Engineering with focus on web development, AI, and cybersecurity."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Software Engineering",
+        "institution": "University of Technology",
+        "duration": "2021 - 2025",
+        "description": "Focus on software development, artificial intelligence, and cybersecurity"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "date": "2024",
+        "credentialId": "AWS-123456789"
+      },
+      {
+        "name": "Google Cloud Fundamentals",
+        "issuer": "Google Cloud",
+        "date": "2023",
+        "credentialId": "GCP-987654321"
+      }
+    ],
+    "volunteering": [
+      {
+        "role": "Programming Tutor",
+        "organization": "Student Learning Center",
+        "duration": "2022 - 2023",
+        "description": "Provided one-on-one and group tutoring sessions for programming courses"
+      },
+      {
+        "role": "Open Source Contributor",
+        "organization": "Various Projects",
+        "duration": "2022 - Present",
+        "description": "Contributing to open-source projects and mentoring junior developers"
+      }
+    ],
+    "events": [
+      {
+        "name": "University Hackathon 2023",
+        "role": "Participant",
+        "date": "2023",
+        "description": "Developed AI-powered educational platform"
+      },
+      {
+        "name": "Tech Conference 2023",
+        "role": "Attendee",
+        "date": "2023",
+        "description": "Attended sessions on AI, cybersecurity, and web development"
+      }
+    ]
+  },
+  "skills": {
+    "programming": [
+      "JavaScript",
+      "Python",
+      "Java",
+      "C++",
+      "SQL"
+    ],
+    "web": [
+      "React",
+      "Node.js",
+      "Django",
+      "HTML/CSS",
+      "Bootstrap"
+    ],
+    "ai": [
+      "TensorFlow",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "SQLite"
+    ],
+    "tools": [
+      "Git",
+      "Docker",
+      "AWS",
+      "VS Code",
+      "Arduino"
+    ],
+    "soft": [
+      "Problem Solving",
+      "Team Collaboration",
+      "Communication",
+      "Leadership"
+    ]
+  },
+  "achievements": [
+    {
+      "title": "Dean's List Recognition",
+      "category": "academic",
+      "year": "2023",
+      "description": "Maintained academic excellence with high GPA"
+    },
+    {
+      "title": "Hackathon Winner",
+      "category": "competition",
+      "year": "2023",
+      "description": "Won first place in university hackathon"
+    },
+    {
+      "title": "AWS Cloud Practitioner",
+      "category": "certification",
+      "year": "2024",
+      "description": "Earned AWS Cloud Practitioner certification"
+    }
+  ]
+}

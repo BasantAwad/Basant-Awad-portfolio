@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Basant-Awad-portfolio/static/css/main.8b80023d.css",
-    "main.js": "/Basant-Awad-portfolio/static/js/main.6562da5d.js",
+    "main.js": "/Basant-Awad-portfolio/static/js/main.b21d3415.js",
     "index.html": "/Basant-Awad-portfolio/index.html",
     "main.8b80023d.css.map": "/Basant-Awad-portfolio/static/css/main.8b80023d.css.map",
-    "main.6562da5d.js.map": "/Basant-Awad-portfolio/static/js/main.6562da5d.js.map"
+    "main.b21d3415.js.map": "/Basant-Awad-portfolio/static/js/main.b21d3415.js.map"
   },
   "entrypoints": [
     "static/css/main.8b80023d.css",
-    "static/js/main.6562da5d.js"
+    "static/js/main.b21d3415.js"
   ]
 }

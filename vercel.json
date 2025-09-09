@@ -1,8 +1,8 @@
 {
   "version": 2,
   "name": "basant-awad-portfolio",
-  "buildCommand": "cd frontend && npm install && npm run build",
-  "outputDirectory": "frontend/build",
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "build",
   "rewrites": [
     {
       "source": "/static/(.*)",

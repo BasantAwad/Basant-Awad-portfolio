@@ -1,65 +1,36 @@
 {
-  "name": "basant-portfolio-monorepo",
+  "name": "basant-portfolio-frontend",
   "version": "1.0.0",
-  "description": "Basant Abdalla Portfolio - Frontend-focused Monorepo with React and Styling",
   "private": true,
-  "workspaces": [
-    "frontend",
-    "shared",
-    "styles"
-  ],
+  "description": "Basant Abdalla Portfolio - React Frontend",
   "scripts": {
-    "dev": "npm run dev:frontend",
-    "dev:frontend": "cd frontend && npm start",
-    "dev:styles": "cd styles && npm run watch",
-    "build": "npm run build:styles && npm run build:frontend",
-    "build:frontend": "cd frontend && npm run build",
-    "build:styles": "cd styles && npm run build",
-    "install:all": "npm install && npm run install:frontend && npm run install:styles",
-    "install:frontend": "cd frontend && npm install",
-    "install:styles": "cd styles && npm install",
-    "test": "npm run test:frontend",
-    "test:frontend": "cd frontend && npm test",
-    "lint": "npm run lint:frontend && npm run lint:styles",
-    "lint:frontend": "cd frontend && npm run lint",
-    "lint:styles": "cd styles && npm run lint",
-    "format": "npm run format:frontend && npm run format:styles",
-    "format:frontend": "cd frontend && npm run format",
-    "format:styles": "cd styles && npm run format",
-    "clean": "npm run clean:frontend && npm run clean:styles",
-    "clean:frontend": "cd frontend && rm -rf node_modules build",
-    "clean:styles": "cd styles && rm -rf node_modules dist",
-    "start": "npm run start:frontend",
-    "start:frontend": "cd frontend && npm start",
-    "deploy": "npm run build && npm run deploy:frontend",
-    "deploy:frontend": "gh-pages -d frontend/build",
-    "predeploy": "npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "axios": "^1.7.2",
+    "framer-motion": "^11.2.13",
+    "gh-pages": "^6.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "gh-pages": "^6.3.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3"
+    "react-scripts": "5.0.1"
   },
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8.0.0"
-  },
+  "homepage": "https://basantawad.github.io/Basant-Awad-portfolio",
   "keywords": [
     "portfolio",
     "react",
     "frontend",
-    "monorepo",
-    "styling"
+    "basant"
   ],
   "author": "Basant Abdalla",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BasantAwad/Basant-Awad"
-  },
-  "bugs": {
-    "url": "https://github.com/BasantAwad/Basant-Awad/issues"
-  },
-  "homepage": "https://basant-awad.com"
+  "license": "MIT"
 }

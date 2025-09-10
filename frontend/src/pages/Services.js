@@ -10,39 +10,88 @@ import {
   FaMobile,
   FaCloud,
   FaCog,
-  FaRocket
+  FaRocket,
+  FaPaintBrush,
+  FaClipboardList,
+  FaFileAlt,
+  FaKeyboard,
+  FaProjectDiagram,
+  FaHeadset,
+  FaUserTie 
 } from 'react-icons/fa';
 import './Services.css';
 
 const Services = () => {
   const services = [
     {
+      icon: <FaPaintBrush />,
+      title: 'Web Design',
+      description: 'Creative, user-friendly, and modern designs tailored to client needs.',
+      features: ['UI/UX Design', 'Prototyping', 'Responsive Layouts', 'Branding'],
+      color: '#FFD6A5'
+    },
+    {
       icon: <FaCode />,
       title: 'Web Development',
-      description: 'Modern responsive websites and web applications using Django, React, and modern web technologies.',
-      features: ['Responsive Design', 'Full-Stack Development', 'API Integration', 'Performance Optimization'],
+      description: 'Responsive websites and scalable web applications using modern technologies.',
+      features: ['Full-Stack Development', 'API Integration', 'Performance Optimization', 'Cross-Browser Support'],
       color: '#8E9AAF'
     },
     {
       icon: <FaRobot />,
       title: 'AI & Machine Learning',
-      description: 'Python-based AI projects, data analysis, and machine learning model development.',
-      features: ['Data Analysis', 'ML Model Development', 'Python Programming', 'Algorithm Implementation'],
+      description: 'Python-based AI projects, data analysis, and intelligent system development.',
+      features: ['Data Analysis', 'ML Models', 'Automation', 'Algorithm Implementation'],
       color: '#CBC0D3'
-    },
-    {
-      icon: <FaShieldAlt />,
-      title: 'Cybersecurity',
-      description: 'Network security, IDS labs, Snort implementation, and security best practices.',
-      features: ['Network Security', 'Intrusion Detection', 'Security Auditing', 'Best Practices'],
-      color: '#EFD3D7'
     },
     {
       icon: <FaMicrochip />,
       title: 'Arduino & IoT Projects',
-      description: 'Hardware-software integration for Internet of Things and embedded systems.',
-      features: ['Hardware Integration', 'Sensor Programming', 'IoT Development', 'Embedded Systems'],
+      description: 'Smart hardware projects integrating sensors, microcontrollers, and software.',
+      features: ['Embedded Systems', 'IoT Development', 'Sensor Programming', 'Automation'],
       color: '#EBCEE5'
+    },
+    {
+      icon: <FaClipboardList />,
+      title: 'Event Planning',
+      description: 'Organizing and managing events with attention to detail and creativity.',
+      features: ['Planning & Scheduling', 'Team Coordination', 'Logistics Management', 'Budgeting'],
+      color: '#FDE2E4'
+    },
+    {
+      icon: <FaFileAlt />,
+      title: 'Technical Writing',
+      description: 'Clear and structured technical content for documentation and reports.',
+      features: ['Documentation', 'Research Reports', 'User Manuals', 'Content Editing'],
+      color: '#CDEAC0'
+    },
+    {
+      icon: <FaKeyboard />,
+      title: 'Data Entry',
+      description: 'Efficient, accurate, and reliable data entry and management services.',
+      features: ['Data Cleaning', 'Database Updates', 'Spreadsheet Management', 'Fast Turnaround'],
+      color: '#FFF1C1'
+    },
+    {
+      icon: <FaProjectDiagram />,
+      title: 'Project Management',
+      description: 'Effective coordination and delivery of projects within deadlines.',
+      features: ['Task Tracking', 'Agile/Scrum Methods', 'Team Leadership', 'Goal-Oriented Execution'],
+      color: '#FFDAC1'
+    },
+    {
+      icon: <FaHeadset />,
+      title: 'Technical Support',
+      description: 'Assisting users and teams with software, hardware, and troubleshooting.',
+      features: ['System Setup', 'Bug Fixing', 'User Assistance', 'Remote Support'],
+      color: '#B5EAD7'
+    },
+    {
+      icon: <FaUserTie />,
+      title: 'Virtual Assistance',
+      description: 'Administrative and professional support for businesses and individuals.',
+      features: ['Email Management', 'Scheduling', 'Task Automation', 'Client Support'],
+      color: '#FFB7B2'
     }
   ];
 

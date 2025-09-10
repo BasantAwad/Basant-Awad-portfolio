@@ -24,50 +24,57 @@ const Resume = () => {
 
   const education = [
     {
-      period: '2021 - 2025',
+      period: '2021 - 2026',
       degree: 'Bachelor of Software Engineering',
-      institution: 'University of Technology',
-      location: 'Software Engineering Department',
-      description: 'Comprehensive program covering software development, database systems, web technologies, and computer science fundamentals.',
+      institution: 'AIU - Alamein International University',
+      location: 'Faculty of Computer Science & Engineering',
+      description: 'Comprehensive software engineering program emphasizing modern software development, database systems, web technologies, and theoretical foundations of computer science.',
       achievements: [
-        'Focus on web development, database management, and programming fundamentals',
-        'Active participation in academic projects and research',
-        'Strong foundation in Java, Python, JavaScript, and SQL',
-        'Understanding of software engineering principles and best practices'
+        'Specialized coursework in web development, database management, software architecture, and AI',
+        'Active involvement in academic research projects and hands-on labs',
+        'Built strong foundations in Java, Python, JavaScript, SQL, and software engineering principles',
+        'Applied best practices in agile development, problem-solving, and system design'
       ]
     }
   ];
-
+  
   const skills = {
     programming: [
-      { name: 'Java', level: 85, icon: <FaCode /> },
-      { name: 'Python', level: 80, icon: <FaCode /> },
-      { name: 'JavaScript', level: 75, icon: <FaCode /> },
-      { name: 'HTML/CSS', level: 85, icon: <FaCode /> },
-      { name: 'SQL', level: 80, icon: <FaDatabase /> }
+      { name: 'Java', level: 90, icon: <FaCode /> },
+      { name: 'Python', level: 85, icon: <FaCode /> },
+      { name: 'JavaScript (ES6+)', level: 80, icon: <FaCode /> },
+      { name: 'HTML5/CSS3', level: 85, icon: <FaCode /> },
+      { name: 'SQL (MySQL, SQLite)', level: 85, icon: <FaDatabase /> }
     ],
     technologies: [
-      { name: 'Web Development', level: 80, icon: <FaLaptopCode /> },
-      { name: 'Database Design', level: 85, icon: <FaDatabase /> },
-      { name: 'Git & GitHub', level: 90, icon: <FaGithub /> },
-      { name: 'Data Management', level: 75, icon: <FaDatabase /> },
-      { name: 'Computer Science', level: 80, icon: <FaGraduationCap /> }
+      { name: 'Full-Stack Web Development', level: 85, icon: <FaLaptopCode /> },
+      { name: 'Database Design & Management', level: 90, icon: <FaDatabase /> },
+      { name: 'Git & GitHub (Version Control)', level: 95, icon: <FaGithub /> },
+      { name: 'API Development & Integration', level: 80, icon: <FaLaptopCode /> },
+      { name: 'Computer Science Fundamentals', level: 85, icon: <FaGraduationCap /> }
+    ],
+    additional: [
+      { name: 'React & Django Frameworks', level: 80, icon: <FaCode /> },
+      { name: 'Cybersecurity Basics (IDS, Snort)', level: 75, icon: <FaShieldAlt /> },
+      { name: 'Arduino & IoT Systems', level: 70, icon: <FaMicrochip /> },
+      { name: 'Agile Project Management', level: 80, icon: <FaProjectDiagram /> },
+      { name: 'Technical Writing & Documentation', level: 85, icon: <FaFileAlt /> }
     ]
   };
-
+  
   const experience = [
     {
       period: '2021 - Present',
       role: 'Software Engineering Student',
-      company: 'University of Technology',
+      company: 'AIU - Alamein International University',
       location: 'Software Engineering Department',
-      description: 'Currently pursuing degree in Software Engineering with focus on web development, database systems, and computer science fundamentals.',
+      description: 'Gaining academic and practical experience in software development, algorithms, and database systems while contributing to multiple projects.',
       achievements: [
-        'Developed multiple web applications using JavaScript, HTML, and CSS',
-        'Implemented database management systems using Java and SQL',
-        'Created Python applications for data management and analysis',
-        'Participated in academic projects covering Theory of Computation',
-        'Maintained strong academic performance while working on complex projects'
+        'Developed and deployed full-stack web applications using JavaScript, React, and Django',
+        'Implemented database systems and optimized queries with SQL and Java',
+        'Built Python-based applications for data management and automation',
+        'Designed DFA simulators and automata tools for Theory of Computation coursework',
+        'Maintained strong academic performance and delivered high-quality projects under tight deadlines'
       ]
     },
     {
@@ -75,42 +82,68 @@ const Resume = () => {
       role: 'Programming Tutor',
       company: 'Student Learning Center',
       location: 'University Campus',
-      description: 'Provided one-on-one and group tutoring sessions for programming courses, helping students understand complex concepts.',
+      description: 'Tutored peers in programming fundamentals, helping them strengthen problem-solving and coding skills.',
       achievements: [
-        'Tutored 20+ students in Java and Python programming',
-        'Improved student success rates by 25%',
-        'Developed study materials and practice exercises',
-        'Received excellent feedback from students and faculty'
+        'Tutored 20+ students in Java and Python programming, leading to improved performance',
+        'Increased student pass rates by 25% through tailored learning support',
+        'Created structured study materials, exercises, and code walkthroughs',
+        'Received strong feedback from both students and faculty for teaching effectiveness'
+      ]
+    },
+    {
+      period: '2022 - Present',
+      role: 'Community & Event Organizer',
+      company: 'AIU ICPC Community',
+      location: 'University',
+      description: 'Founded and organized a student programming community, managing events, training, and competitions.',
+      achievements: [
+        'Built the ICPC student community from the ground up, managing 300+ students',
+        'Planned and executed coding events, workshops, and training sessions',
+        'Encouraged non-technical students to join ICPC by making events engaging and rewarding',
+        'Handled administrative work, documentation, and leadership responsibilities'
       ]
     }
   ];
-
+  
   const projects = [
     {
       title: 'Car Rental App',
-      description: 'JavaScript-based car rental application with modern UI/UX design',
+      description: 'Responsive JavaScript-based car rental system with a modern UI/UX, booking flow, and user interaction features.',
       technologies: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
       link: 'https://github.com/BasantAwad/car-rental-app'
     },
     {
       title: 'Advanced Database Project',
-      description: 'Java-based database management system demonstrating advanced database concepts',
+      description: 'A Java-based database management application showcasing advanced SQL concepts, schema design, and data manipulation.',
       technologies: ['Java', 'SQL', 'Database Design'],
       link: 'https://github.com/BasantAwad/Advanced-Database-Project'
     },
     {
-      title: 'Publication Log',
-      description: 'Python application for managing and tracking publications and academic documents',
-      technologies: ['Python', 'Data Management'],
+      title: 'Publication Log System',
+      description: 'Python-based research management tool for storing, tracking, and validating academic publications with automated workflows.',
+      technologies: ['Python', 'Data Management', 'File Handling'],
       link: 'https://github.com/BasantAwad/Publication_Log'
     },
     {
-      title: 'Theory of Computation (TOC)',
-      description: 'Java implementation of Theory of Computation concepts including automata and formal languages',
-      technologies: ['Java', 'Algorithms', 'Computer Science'],
+      title: 'Theory of Computation (TOC) Tools',
+      description: 'Java project implementing automata and formal language concepts, including DFA simulations and computational complexity analysis.',
+      technologies: ['Java', 'Algorithms', 'Automata Theory'],
       link: 'https://github.com/BasantAwad/TOC'
+    },
+    {
+      title: 'DFA Simulator with GUI',
+      description: 'Interactive Java Swing-based DFA simulator that visualizes states, transitions, and acceptance paths in automata theory.',
+      technologies: ['Java', 'Swing GUI', 'Theory of Computation'],
+      link: 'https://github.com/BasantAwad/DFA-Simulator'
+    },
+    {
+      title: 'Personal Portfolio Website',
+      description: 'Modern and responsive portfolio showcasing projects, achievements, and services with React and Tailwind CSS.',
+      technologies: ['React', 'Tailwind CSS', 'JavaScript'],
+      link: 'https://github.com/BasantAwad/Portfolio'
     }
   ];
+  
 
   const renderSkillBar = (skill) => (
     <div key={skill.name} className="skill-item">

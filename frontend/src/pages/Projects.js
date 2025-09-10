@@ -108,8 +108,8 @@ const Projects = () => {
       description: 'Personal portfolio website built with React and styled using the Dreamy Princess color palette. Features dark/light mode, responsive design, and smooth animations.',
       technologies: ['React', 'CSS3', 'Framer Motion', 'React Router', 'Responsive Design'],
       features: ['Responsive Design', 'Dark/Light Mode', 'Smooth Animations', 'Multiple Pages', 'Interactive Elements', 'Modern UI/UX'],
-      github: 'https://github.com/BasantAwad/portfolio',
-      live: 'https://basant.dev',
+      github: 'https://github.com/BasantAwad/Basant-Awad-portfolio',
+      live: 'https://basant-awad-portfolio.vercel.app/',
       status: 'Completed',
       year: '2024'
     }

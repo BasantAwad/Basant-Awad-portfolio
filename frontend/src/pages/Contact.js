@@ -89,8 +89,8 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'basant.abdalla@example.com',
-      link: 'mailto:basant.abdalla@example.com'
+      value: 'basantawad014@gmail.com',
+      link: 'mailto:basantawad014@gmail.com'
     },
     {
       icon: <FaMapMarkerAlt />,

@@ -52,15 +52,27 @@ const Admin = () => {
 
 
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Simple password check for demo (in real app, use proper authentication)
-    if (password === 'admin123') {
+  
+    const response = await fetch('http://localhost:5000/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password })
+    });
+  
+    const result = await response.json();
+  
+    if (result.success) {
+      // Save token for future authenticated requests
+      localStorage.setItem('token', result.token);
       setIsAuthenticated(true);
+      alert(result.message);
     } else {
-      alert('Incorrect password');
+      alert(result.message);
     }
   };
+  
 
   // Helper methods for analytics
   const getEventIcon = (eventName) => {

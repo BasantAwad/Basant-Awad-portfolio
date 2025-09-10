@@ -28,47 +28,47 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: 'Academic Excellence',
+      title: 'Software Engineering Excellence',
       category: 'academic',
-      year: '2023',
-      issuer: 'University of Technology',
-      description: 'Maintained strong academic performance in Software Engineering program, demonstrating excellence in programming, database systems, and computer science fundamentals.',
+      year: '2023-2025',
+      issuer: 'University of Technology, Baghdad',
+      description: 'Ranked among top students in Software Engineering program with expertise in advanced programming, database systems, and software development methodologies.',
       icon: <FaGraduationCap />,
       color: '#8E9AAF',
       certificate: null,
-      verification: null
+      verification: 'https://www.linkedin.com/in/basantabdalla/'
     },
     {
       id: 2,
-      title: 'Programming Tutor Recognition',
+      title: 'Programming Tutor & Mentor',
       category: 'volunteering',
-      year: '2023',
-      issuer: 'Student Learning Center',
-      description: 'Recognized for outstanding contribution as a programming tutor, helping fellow students improve their coding skills and understanding of computer science concepts.',
+      year: '2023-2024',
+      issuer: 'University Student Learning Center',
+      description: 'Provided programming guidance and mentorship to fellow students, helping improve coding skills and understanding of computer science fundamentals.',
       icon: <FaUsers />,
       color: '#FF6B6B',
       certificate: null,
-      verification: null
+      verification: 'https://www.linkedin.com/in/basantabdalla/'
     },
     {
       id: 3,
-      title: 'Web Development Projects',
+      title: 'Car Rental Management System',
       category: 'projects',
-      year: '2025',
-      issuer: 'Personal Portfolio',
-      description: 'Successfully developed multiple web applications including car rental system, sustainable development goals showcase, and modern portfolio website.',
+      year: '2024',
+      issuer: 'Full-Stack Development Project',
+      description: 'Developed a comprehensive car rental system with admin dashboard, booking management, and user authentication features using modern web technologies.',
       icon: <FaLaptopCode />,
       color: '#4ECDC4',
       certificate: null,
-      verification: 'https://github.com/BasantAwad'
+      verification: 'https://github.com/BasantAwad/car-rental-system'
     },
     {
       id: 4,
-      title: 'Database Management Excellence',
+      title: 'Advanced Database Project',
       category: 'academic',
-      year: '2025',
-      issuer: 'University of Technology',
-      description: 'Demonstrated advanced understanding of database systems through comprehensive project development and implementation of complex data management solutions.',
+      year: '2024',
+      issuer: 'University Database Course',
+      description: 'Designed and implemented a complex database management system demonstrating advanced SQL queries, normalization, and optimization techniques.',
       icon: <FaDatabase />,
       color: '#45B7D1',
       certificate: null,
@@ -76,11 +76,11 @@ const Achievements = () => {
     },
     {
       id: 5,
-      title: 'Theory of Computation Project',
+      title: 'Theory of Computation Implementation',
       category: 'academic',
-      year: '2025',
+      year: '2024',
       issuer: 'Computer Science Department',
-      description: 'Successfully implemented Theory of Computation concepts including automata, formal languages, and computational complexity in Java.',
+      description: 'Implemented automata theory concepts and formal language processing algorithms in Java, demonstrating strong theoretical CS foundations.',
       icon: <FaCode />,
       color: '#96CEB4',
       certificate: null,
@@ -88,27 +88,51 @@ const Achievements = () => {
     },
     {
       id: 6,
-      title: 'Open Source Contribution',
-      category: 'community',
+      title: 'SDGs Showcase Project',
+      category: 'projects',
       year: '2024',
-      issuer: 'GitHub Community',
-      description: 'Active contributor to open-source projects and maintainer of personal repositories showcasing various programming skills and project implementations.',
-      icon: <FaGithub />,
-      color: '#333333',
+      issuer: 'Front-End Development',
+      description: 'Created an interactive Sustainable Development Goals showcase website featuring modern UI/UX design and responsive layout implementation.',
+      icon: <FaGlobe />,
+      color: '#4CAF50',
+      certificate: null,
+      verification: 'https://github.com/BasantAwad/sustainable-development-goals'
+    },
+    {
+      id: 7,
+      title: 'Publication Management System',
+      category: 'projects',
+      year: '2024',
+      issuer: 'Python Development Project',
+      description: 'Built a publication log system for academic document management using Python with efficient data handling and organization capabilities.',
+      icon: <FaBook />,
+      color: '#FFA07A',
+      certificate: null,
+      verification: 'https://github.com/BasantAwad/Publication_Log'
+    },
+    {
+      id: 8,
+      title: 'Portfolio Website Development',
+      category: 'projects',
+      year: '2024',
+      issuer: 'React.js Project',
+      description: 'Designed and developed a modern responsive portfolio website using React.js showcasing projects and professional achievements.',
+      icon: <FaLaptop />,
+      color: '#9C27B0',
       certificate: null,
       verification: 'https://github.com/BasantAwad'
     },
     {
-      id: 7,
-      title: 'Data Management Project',
-      category: 'projects',
-      year: '2025',
-      issuer: 'Personal Portfolio',
-      description: 'Developed Python-based publication log system for managing and tracking academic documents and research papers.',
-      icon: <FaDatabase />,
-      color: '#FFA07A',
+      id: 9,
+      title: 'Open Source Contributions',
+      category: 'community',
+      year: '2024',
+      issuer: 'GitHub Community',
+      description: 'Active open-source contributor with multiple repositories demonstrating software development skills across various technologies and domains.',
+      icon: <FaGithub />,
+      color: '#333333',
       certificate: null,
-      verification: 'https://github.com/BasantAwad/Publication_Log'
+      verification: 'https://github.com/BasantAwad'
     }
   ];
 
@@ -245,7 +269,7 @@ const Achievements = () => {
             <p>Download my complete resume or get in touch to discuss opportunities.</p>
             <div className="cta-buttons">
               <a 
-                href="/resume" 
+                href="https://drive.google.com/file/d/1tRXitn1bW1Nch2wX0nUiNrrhM3Uv7W_k/view?usp=sharing" 
                 className="btn btn-primary"
               >
                 View Resume

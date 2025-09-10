@@ -1,3 +1,7 @@
+import express from 'express';
+import dotenv from 'dotenv';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -5,6 +9,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const slowDown = require('express-slow-down');
 const compression = require('compression');
+
 require('dotenv').config();
 
 const app = express();
@@ -26,6 +31,36 @@ app.use(helmet({
     },
   },
 }));
+
+// Secure login route using bcrypt + JWT
+app.post('/api/login', async (req, res) => {
+  try {
+    const { password } = req.body;
+    const hashedPassword = process.env.ADMIN_HASHED_PASS;
+
+    if (!password) {
+      return res.status(400).json({ success: false, message: 'Password is required' });
+    }
+
+    const isMatch = await bcrypt.compare(password, hashedPassword);
+
+    if (isMatch) {
+      // Generate JWT
+      const token = jwt.sign(
+        { role: 'admin' }, 
+        process.env.JWT_SECRET, 
+        { expiresIn: process.env.JWT_EXPIRES_IN || '1h' }
+      );
+
+      return res.json({ success: true, message: 'Login successful', token });
+    } else {
+      return res.status(401).json({ success: false, message: 'Incorrect password' });
+    }
+  } catch (err) {
+    console.error('Login error:', err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
 
 // Rate limiting
 const limiter = rateLimit({

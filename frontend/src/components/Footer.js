@@ -38,7 +38,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a 
-                href="mailto:basant.abdalla@example.com" 
+                href="mailto:basantawad014@gmail.com" 
                 className="footer-social-link"
                 aria-label="Email"
               >

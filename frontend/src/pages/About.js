@@ -15,26 +15,74 @@ import './About.css';
 const About = () => {
   const education = [
     {
-      year: '2021 - 2025',
+      year: '2019 - 2022',
+      degree: 'High School Diploma (American Diploma)',
+      institution: 'Modern American School (MAS)',
+      description: 'Completed a well-rounded program that included SAT preparation, American and Chinese history, along with a variety of fun and educational activities that built both academic and personal growth.'
+        },
+    {
+      year: '2022 - 2026',
       degree: 'BSc Computer Science - Software Engineering',
       institution: 'Alamein International University',
-      description: 'Focusing on modern software development practices, AI fundamentals'
+      description: 'Comprehensive program emphasizing modern software engineering principles, full-stack development, database systems, and artificial intelligence fundamentals, with practical projects and research experience.'
     }
   ];
+  
 
   const skills = {
-    languages: ['Java', 'Python', 'JavaScript', 'HTML/CSS', 'SQL'],
-    frameworks: ['Django', 'React', 'Node.js','Express.js'],
-    tools: ['Git', 'Docker', 'VS Code', 'IntelliJ IDEA', 'Postman', 'Arduino IDE'],
-    databases: ['MySQL', 'MongoDB', 'SQLite'],
+    languages: [
+      'Java',
+      'Python',
+      'JavaScript',
+      'HTML/CSS',
+      'SQL'
+    ],
+    frameworks: [
+      'Django',
+      'React',
+      'Node.js',
+      'Express.js',
+      'Spring Boot',
+      'Bootstrap',
+      'Tailwind CSS'
+    ],
+    tools: [
+      'Git',
+      'Docker',
+      'VS Code',
+      'IntelliJ IDEA',
+      'Postman',
+      'Arduino IDE',
+      'Figma'
+    ],
+    databases: [
+      'MySQL',
+      'MongoDB',
+      'SQLite'
+    ],
+    softSkills: [
+      'Problem-Solving',
+      'Team Collaboration',
+      'Leadership',
+      'Adaptability',
+      'Time Management',
+      'Communication',
+      'Critical Thinking',
+      'Creativity',
+      'Project Management'
+    ]
   };
+  
 
   const interests = [
     { icon: <FaBook />, title: 'Reading', description: 'Tech blogs, sci-fi novels, and programming books' },
     { icon: <FaMusic />, title: 'Music', description: 'Classical, electronic, and ambient sounds' },
     { icon: <FaPalette />, title: 'Design', description: 'UI/UX design and creative coding' },
-    { icon: <FaCoffee />, title: 'Coffee', description: 'Exploring new coffee shops and brewing methods' }
+    { icon: <FaCoffee />, title: 'Coffee', description: 'Exploring new coffee shops and brewing methods' },
+    { icon: <FaVrCardboard />, title: 'Virtual Reality', description: 'Exploring immersive VR experiences and future tech' },
+    { icon: <FaGlobe />, title: 'Traveling', description: 'Discovering new cultures, places, and perspectives' }
   ];
+  
 
   return (
     <div className="about">
@@ -67,10 +115,11 @@ const About = () => {
                 into a commitment to building software that makes a difference in people's lives.
               </p>
               <p>
-                Currently pursuing my degree in Software Engineering, I specialize in full-stack development, 
-                artificial intelligence, and cybersecurity. I believe in the power of technology to solve real-world problems 
-                and am constantly exploring new technologies and methodologies to stay at the forefront of innovation.
+                I am currently pursuing a degree in Software Engineering with a strong focus on full-stack development. 
+                Passionate about leveraging technology to solve real-world challenges, I continuously explore emerging tools, 
+                frameworks, and methodologies to stay at the forefront of innovation and deliver impactful solutions.
               </p>
+
               <p>
                 When I'm not coding, you'll find me participating in hackathons, contributing to open-source projects, 
                 or mentoring fellow students. I'm passionate about creating inclusive technology solutions and 
@@ -186,6 +235,24 @@ const About = () => {
               <h3><FaCode /> Databases</h3>
               <div className="skills-list">
                 {[...skills.databases].map((skill, index) => (
+                  <motion.span
+                    key={skill}
+                    className="skill-tag"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
+
+            <div className="skills-category">
+              <h3><FaTools /> Soft skills</h3>
+              <div className="skills-list">
+                {skills.softSkills.map((skill, index) => (
                   <motion.span
                     key={skill}
                     className="skill-tag"
